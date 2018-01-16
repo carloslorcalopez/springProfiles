@@ -25,7 +25,7 @@ Se puede determinar el profile a correr a través de la anotación profile
 @ActiveProfiles(profiles="prod")
 ```
 
-## Seleccion de archivo properties
+## Utilizar Distintas propiedades dependiendo del profile
 
 ### Multiple profiles un unico application.yml
 
@@ -70,4 +70,12 @@ La marca '---' identifica una sección, si la sección no incluye spring.profile
 ### Multiples application.yml
 
 Es posible utilizar multiples archivos de configuración. Cuando se utiliza el profile 'XXXXX' se utilizan los parametros application-XXXXX.yml . 
+
+## Uso de Beans a partir de un profile
+
+Con la anotación profile se pueden demarcar las clases de configuracion y los Bean para que se carguen solo en determinados profile
+
+```
+
+```
 
