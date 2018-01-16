@@ -4,9 +4,9 @@
 ### Correr Clase
 
 El profile se puede setear por una variable de ambiente
-´´´
+```
 System.setProperty("spring.profiles.active", "prod");
-´´´
+```
 
 O como variable de ambiente en la shell
 
@@ -14,16 +14,16 @@ O como variable de ambiente en la shell
 
 Se puede determinar el profile a correr a través de la anotación profile
 
-´´´
+```
 @ActiveProfiles(profiles="prod")
-´´´
+```
 
 ## Seleccion de archivo properties
 
 ### Multiple profiles un unico application.yml
 
 Se pueden configurar secciones generales y especificas para profile (spring.profiles.active)
-´´´
+```
 logging:
   level:
     .: error
@@ -56,7 +56,7 @@ spring:
 server:
   email: default@mkyong.com
   port: 8200
-´´´
+```
 
 La marca '---' identifica una sección, si la sección no incluye spring.profiles.active se aplica a cualquier profile.
 
