@@ -8,7 +8,14 @@ El profile se puede setear por una variable de ambiente
 System.setProperty("spring.profiles.active", "prod");
 ```
 
-O como variable de ambiente en la shell
+O como parametro de la invocación '-Dspring.profiles.active'
+```
+$ java -jar -Dspring.profiles.active=production demo-0.0.1-SNAPSHOT.jar
+```
+O setearlo en el ambiente
+```
+export spring_profiles_active=dev
+```
 
 ### Correr Tests
 
