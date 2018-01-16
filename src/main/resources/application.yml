@@ -1,0 +1,36 @@
+logging:
+  level:
+    .: error
+    org.springframework: ERROR
+    com.mkyong: ERROR
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"
+    file: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
+---
+spring:
+  profiles:
+    active: "dev"
+  application:
+        name: TodoDev
+server:
+  email: default@mkyong.com
+  port: 8090
+---
+spring:
+  profiles:
+    active: "prod"
+  application:
+        name: TodoProd
+server:
+  email: default@mkyong.com
+  port: 8100
+  
+---
+spring:
+  profiles:
+    active: "test"
+  application:
+        name: TodoTest
+server:
+  email: default@mkyong.com
+  port: 8200

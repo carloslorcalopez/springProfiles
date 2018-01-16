@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:derby:memory:sa;create=true
+    username: sa
+    password: sa
+    driverClassName: org.apache.derby.jdbc.EmbeddedDriver
+  jpa:
+    database-platform: org.hibernate.dialect.DerbyTenSevenDialect
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        show_sql: true
+        use_sql_comments: true
+        format_sql: true
+        default_schema: app
