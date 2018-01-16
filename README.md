@@ -108,4 +108,6 @@ Cada profile carga una configuración distinta de JPA sobre una base de datos em
 
 Contiene distintas clases de configuracion demarcadas por profile y que generan un Bean Todo el cual viene inicializado de distinta forma dependiendo el profile
 
+### Tests
 
+Los Tests estan nombrados a partir del profile que utilizan. Ojo con la salida de la consola ya que se imprime por pantalla informacion relativa a la configuracion utilizada para identificar el profile.
